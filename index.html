@@ -844,21 +844,24 @@
         <h2 class="section-title">Get in Touch</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <form id="contactForm">
+                <form id="contactForm"
+                      action="https://formspree.io/f/xqalvdnp"
+                      method="POST">
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                         </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="Subject">
-                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="text" name="subject" class="form-control" placeholder="Subject">
+                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
                     <div class="text-center mt-4">
                         <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>

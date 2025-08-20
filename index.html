@@ -508,7 +508,7 @@
 
             .profile-container {
                 margin-left: 0;
-                margin-top: 3rem;
+                margin-top: 4rem; /* Increased from 3rem to 4rem */
                 text-align: center;
             }
 
@@ -540,8 +540,8 @@
             }
 
             .btn-outline {
-                margin-left: 1rem;
-                margin-top: 0rem;
+                margin-left: 0;
+                margin-top: 1rem; /* Added margin to separate buttons */
             }
 
             .contact-section {
@@ -566,6 +566,18 @@
                 height: 310px;
                 left: 50%;
                 transform: translateX(-50%);
+            }
+
+            /* Button container adjustments */
+            .hero-content .d-flex {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-content .btn {
+                width: 200px;
+                margin: 0.25rem 0;
             }
         }
 
@@ -595,6 +607,15 @@
             .profile-decoration::after {
                 width: 280px;
                 height: 280px;
+            }
+
+            /* Additional mobile button adjustments */
+            .hero-content .d-flex {
+                flex-direction: column;
+            }
+
+            .btn-outline {
+                margin-left: 0;
             }
         }
     </style>
@@ -681,9 +702,9 @@
                 <div class="project-card">
                     <div class="project-img-container">
                         <img src="https://i.pinimg.com/736x/71/b9/25/71b92549943b7a7bffba605985385cd6.jpg" class="card-img-top project-img" alt="Urban Cravings Restaurant Website">
-<!--                        <div class="project-overlay">-->
-<!--                            <span class="text-white">View Case Study</span>-->
-<!--                        </div>-->
+                        <!--                        <div class="project-overlay">-->
+                        <!--                            <span class="text-white">View Case Study</span>-->
+                        <!--                        </div>-->
                     </div>
                     <div class="project-content">
                         <span class="project-category">Web Design</span>
